@@ -1,0 +1,74 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.jumbotron {
+    background-image: url(../img/header-image.jpg);
+    background-position: 0% 50%;
+    background-size: cover;
+    background-color: black;
+    max-height: 300px;
+    /* http://stackoverflow.com/questions/29102884/increasing-height-of-bootstrap-jumbotron-but-remaining-responsive - adapted from answer by @paul-jansen */
+    padding-top: 0.5%;
+    padding-bottom: 8%;    
+}
+
+.jumbotron h1 {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    padding-left: 2em;
+}
+
+.search-header {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+hr {
+    border-color: lightgray;
+}
+
+/* Code for skip links from https://www.bignerdranch.com/blog/web-accessibility-skip-navigation-links/ by Andrew Jones */
+.skipLink {
+    position: absolute;
+    top: -1000px;
+    left: -1000px;
+    height: 1px;
+    width: 1px;
+    text-align: left;
+    overflow: hidden;    
+    padding-top: 70px; 
+}
+a.skipLink:active,
+a.skipLink:focus,
+a.skipLink:hover {
+    left: 0;
+    top: 0;
+    width: auto;
+    height: 18%;
+    overflow: visible;
+    padding-top: 70px;    
+}
+
+.glyphicon {
+	padding-right: 10px;
+}
+
+.glyphicon-chevron-right {
+	padding-left: 10px;	
+}
+
+label {
+	font-weight: normal;
+}
+
+.navbar-default .navbar-nav>li>a, .navbar-default .navbar-text, .navbar-default .navbar-brand {
+    color: dimgray;
+}
+
+a.sr-only.sr-only-focusable {
+    color: rgb(0, 89, 142); 
+    background: rgb(248, 248, 248); 
+    opacity: 1;
+}

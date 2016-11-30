@@ -1,0 +1,39 @@
+{
+  "restaurantReviews": [
+    {
+      "code": "GREENAPPLE",
+      "reviewerName": "Person A",
+      "reviewerDate": "2016-09-01 09:00AM",
+      "starRating": "4",
+      "comments": "Awesome!"
+    },
+    {
+      "code": "GREENAPPLE",
+      "reviewerName": "Person B",
+      "reviewerDate": "2016-08-01 09:00AM",
+      "starRating": "3",
+      "comments": "Ok!"
+    },
+    {
+      "code": "VINEYARD",
+      "reviewerName": "Person A",
+      "reviewerDate": "2016-09-01 09:00AM",
+      "starRating": "2",
+      "comments": "Bad!"
+    },
+    {
+      "code": "GALLERY",
+      "reviewerName": "Person C",
+      "reviewerDate": "2016-09-01 09:00AM",
+      "starRating": "4",
+      "comments": "Awesome 2!"
+    },
+    {
+      "code": "MONARCH",
+      "reviewerName": "Person D",
+      "reviewerDate": "2016-09-01 09:00AM",
+      "starRating": "4",
+      "comments": "Awesome 2!"
+    }
+  ]
+}

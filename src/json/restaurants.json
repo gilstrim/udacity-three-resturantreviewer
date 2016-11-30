@@ -1,0 +1,102 @@
+{
+    "restaurants": [{
+        "code": "GREENAPPLE",
+        "name": "The Green Apple",
+        "photoUrl": "img/img1.jpg",
+        "photoDescription": "The Green Apple restaurant",
+        "streetAddress": "100 Smith Street, Plumstead",
+        "city": "Cape Town",
+        "cuisineTypes": "Italian,Portuguese",
+        "timesOpen": "Monday - Saturday: 08:00AM to 10:00PM; Sunday: Closed",
+        "starRating": "4",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at varius velit. Duis vel nibh ornare, viverra est non, porta magna. Vestibulum faucibus, turpis vitae tempor ultrices, justo quam eleifend erat, ac pretium nisl diam eu lacus. Aliquam erat volutpat."
+    }, {
+        "code": "VINEYARD",
+        "name": "The Vineyard",
+        "photoUrl": "img/img2.jpg",
+        "photoDescription": "The Vineyard restaurant",
+        "streetAddress": "100 Jones Street, Sandton",
+        "city": "Johannesburg",
+        "cuisineTypes": "Italian,Greek,French",
+        "timesOpen": "Monday - Saturday: 08:00AM to 10:00PM; Sunday: Closed",
+        "starRating": "4",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at varius velit. Duis vel nibh ornare, viverra est non, porta magna. Vestibulum faucibus, turpis vitae tempor ultrices, justo quam eleifend erat, ac pretium nisl diam eu lacus. Aliquam erat volutpat."
+    }, {
+        "code": "NEWLANTERN",
+        "name": "The New Lantern",
+        "photoUrl": "img/img3.jpg",
+        "photoDescription": "The New Lantern restaurant",
+        "streetAddress": "5 Harriot Street, Parktown",
+        "city": "Johannesburg",
+        "cuisineTypes": "Spanish,German,Portuguese",
+        "timesOpen": "Monday - Saturday: 08:00AM to 10:00PM; Sunday: Closed",
+        "starRating": "4",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at varius velit. Duis vel nibh ornare, viverra est non, porta magna. Vestibulum faucibus, turpis vitae tempor ultrices, justo quam eleifend erat, ac pretium nisl diam eu lacus. Aliquam erat volutpat."
+    }, {
+        "code": "BAMBOOWAY",
+        "name": "The Bamboo Way",
+        "photoUrl": "img/img4.jpg",
+        "photoDescription": "The Bamboo Way restaurant",
+        "streetAddress": "100 Ryan Avenue, Bishops Court",
+        "city": "Cape Town",
+        "cuisineTypes": "Thai,Korean,Japanese",
+        "timesOpen": "Monday - Saturday: 08:00AM to 10:00PM; Sunday: Closed",
+        "starRating": "4",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at varius velit. Duis vel nibh ornare, viverra est non, porta magna. Vestibulum faucibus, turpis vitae tempor ultrices, justo quam eleifend erat, ac pretium nisl diam eu lacus. Aliquam erat volutpat."
+    }, {
+        "code": "GREEKFABLE",
+        "name": "The Greek Fable",
+        "photoUrl": "img/img6.jpg",
+        "photoDescription": "The Greek Fable restaurant",
+        "streetAddress": "11 Patmos Street, Craighall",
+        "city": "Johannesburg",
+        "cuisineTypes": "Greek",
+        "timesOpen": "Monday - Saturday: 08:00AM to 10:00PM; Sunday: Closed",
+        "starRating": "4",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at varius velit. Duis vel nibh ornare, viverra est non, porta magna. Vestibulum faucibus, turpis vitae tempor ultrices, justo quam eleifend erat, ac pretium nisl diam eu lacus. Aliquam erat volutpat."
+    }, {
+        "code": "GALLERY",
+        "name": "The Gallery",
+        "photoUrl": "img/img7.jpg",
+        "photoDescription": "The Gallery restaurant",
+        "streetAddress": "100 Smith Street, Constantia",
+        "city": "Cape Town",
+        "cuisineTypes": "Italian,Turkish,Portuguese",
+        "timesOpen": "Monday - Saturday: 08:00AM to 10:00PM; Sunday: Closed",
+        "starRating": "4",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at varius velit. Duis vel nibh ornare, viverra est non, porta magna. Vestibulum faucibus, turpis vitae tempor ultrices, justo quam eleifend erat, ac pretium nisl diam eu lacus. Aliquam erat volutpat."
+    }, {
+        "code": "HARVEST",
+        "name": "Harvest",
+        "photoUrl": "img/img8.jpg",
+        "photoDescription": "The Harvest restaurant",
+        "streetAddress": "100 Smith Street, Sea Point",
+        "city": "Cape Town",
+        "cuisineTypes": "Portuguese,Lebanese",
+        "timesOpen": "Monday - Saturday: 08:00AM to 10:00PM; Sunday: Closed",
+        "starRating": "4",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at varius velit. Duis vel nibh ornare, viverra est non, porta magna. Vestibulum faucibus, turpis vitae tempor ultrices, justo quam eleifend erat, ac pretium nisl diam eu lacus. Aliquam erat volutpat."
+    }, {
+        "code": "MONARCH",
+        "name": "The Monarch",
+        "photoUrl": "img/img9.jpg",
+        "photoDescription": "The Monarch restaurant",
+        "streetAddress": "100 Smith Street, Fourways",
+        "city": "Johannesburg",
+        "cuisineTypes": "Chinese,Thai,Indian",
+        "timesOpen": "Monday - Saturday: 08:00AM to 10:00PM; Sunday: Closed",
+        "starRating": "4",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at varius velit. Duis vel nibh ornare, viverra est non, porta magna. Vestibulum faucibus, turpis vitae tempor ultrices, justo quam eleifend erat, ac pretium nisl diam eu lacus. Aliquam erat volutpat."
+    }, {
+        "code": "ROYAL",
+        "name": "The Royal",
+        "photoUrl": "img/img10.jpg",
+        "photoDescription": "The Royal restaurant",
+        "streetAddress": "100 Smith Street, Wynberg",
+        "city": "Cape Town",
+        "cuisineTypes": "Spanish,Portuguese",
+        "timesOpen": "Monday - Saturday: 08:00AM to 10:00PM; Sunday: Closed",
+        "starRating": "4",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at varius velit. Duis vel nibh ornare, viverra est non, porta magna. Vestibulum faucibus, turpis vitae tempor ultrices, justo quam eleifend erat, ac pretium nisl diam eu lacus. Aliquam erat volutpat."
+    }]
+}

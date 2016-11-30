@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MY.RESTAURANT.REVIEWER</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400" rel="stylesheet">
+
+    <!-- CSS References -->
+
+    <!-- build:css css/app.min.css -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-accessibility.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- /build -->
+</head>
+
+<body>    
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">        
+        <a class="sr-only sr-only-focusable" href="#restaurantSearchForm">SKIP.TO.RESTAURANT.SEARCH</a>
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <!-- Mobile navigation from @Sebsemillia on http://stackoverflow.com/questions/21956741/mobile-bootstrap-navbar-not-working -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#restaurantReviewerNavbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand pull-left" href="index.html">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>MY.RESTAURANT.REVIEWER
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="restaurantReviewerNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Home</a></li>
+                    <li><a href="#restaurantSearchForm"><span class="glyphicon glyphicon-search" aria-hidden="true"></span>Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="jumbotron" title="Jumbotron header image">
+            <h1>MEET</h1>
+            <h1>GREET</h1>
+            <h1>EAT</h1>
+        </section>
+        <section class="container" id="restaurantSearchForm">
+            <h1 class="text-center search-header">SEARCH.FOR.A.RESTAURANT</h1>
+            <p class="text-center">Please complete one or more of the fields below to search for a restaurant</p>
+            <hr />
+            <br />
+            <form>
+                <div class="row">
+                    <div class="col-lg-4 form-group">
+                        <span class="glyphicon glyphicon-list" aria-hidden="true"></span>
+                        <label for="cboCuisineSearch">Cuisine Types</label>
+                        <select class="form-control" id="cboCuisineSearch" name="cuisineSearch">
+                            <option value="" disabled selected>Choose a cuisine type</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-4 form-group">
+                        <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                        <label for="cboLocationSearch">Location</label>
+                        <select class="form-control" id="cboLocationSearch" name="locationSearch">
+                            <option value="" disabled selected>Choose a location</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-4 form-group">
+                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                        <label for="cboRatingSearch">Rating</label>
+                        <select class="form-control" id="cboRatingSearch" name="ratingSearch">
+                            <option value="" disabled selected>Choose a star rating</option>
+                            <option value="1">1 Star and Above</option>
+                            <option value="2">2 Star and Above</option>
+                            <option value="3">3 Star and Above</option>
+                            <option value="4">4 Star and Above</option>
+                            <option value="5">5 Star</option>
+                        </select>
+                    </div>
+                </div>
+                <br />
+                <div class="row text-center">
+                    <button type="button" class="btn btn-primary btn-lg" value="Search" id="btnSearch">SEARCH</button>
+                    <button type="button" class="btn btn-default btn-lg" value="Clear" id="btnClear">CLEAR</button>
+                </div>
+                <br />
+                <div class="alert alert-warning alert-dismissible text-center" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <strong>Search Results: </strong>
+                    <label id="lblSearchResults"></label>
+                </div>
+            </form>
+        </section>
+        <br />
+        <br />
+        <section class="container-fluid" style="background-color: burlywood; width: 100%">
+            <br/>
+            <h1 class="text-center search-header">SEARCH.RESULTS</h1>
+            <p class="text-center">Please find the results for your search below</p>
+            <hr />
+            <br />
+            <div class="row" id="searchResults"></div>
+        </section>
+        <!-- Modal -->
+        <div id="modalContainer">
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header text-center">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h2 class="modal-title search-header" id="myModalLabel"></h2>
+                        </div>
+                        <div class="modal-body">
+                            <ul class="nav nav-tabs text-center" role="tablist" id="restaurantTabs">
+                                <li role="presentation" class="active"><a href="#description" aria-controls="description" role="tab" data-toggle="tab">DESCRIPTION</a></li>
+                                <li role="presentation"><a href="#images" aria-controls="images" role="tab" data-toggle="tab">IMAGES</a></li>
+                                <li role="presentation"><a href="#reviews" aria-controls="reviews" role="tab" data-toggle="tab">REVIEWS</a></li>
+                                <li role="presentation"><a href="#addAReview" aria-controls="addAReview" role="tab" data-toggle="tab">ADD.A.REVIEW</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane fade in active" id="description"></div>
+                                <div role="tabpanel" class="tab-pane fade" id="images"></div>
+                                <div role="tabpanel" class="tab-pane fade" id="reviews"></div>
+                                <div role="tabpanel" class="tab-pane fade" id="addAReview">
+                                    <br />
+                                    <label id="lblAddReviewDescription"></label>
+                                    <br />
+                                    <br />
+                                    <form id="formAddReview" role="form" data-toggle="validator">
+                                        <div class="form-group">
+                                            <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                                            <label for="txtUserName">Name</label>
+                                            <input type="text" class="form-control" id="txtUserName" placeholder="e.g. John Doe" name="name" required data-error="Please complete the name field.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                        <div class="form-group">
+                                            <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                                            <label for="txtUserReview">Review</label>
+                                            <textarea id="txtUserReview" class="form-control" rows="3" name="reviewText" required data-error="Please complete the review field."></textarea>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                        <div class="form-group">
+                                            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                            <label for="cboUserRating">Rating</label>
+                                            <select class="form-control" id="cboUserRating" name="formUserRating" required data-error="Please select a star rating.">
+                                                <option value="" disabled selected>Choose a star rating</option>
+                                                <option value="1">1 Star</option>
+                                                <option value="2">2 Star</option>
+                                                <option value="3">3 Star</option>
+                                                <option value="4">4 Star</option>
+                                                <option value="5">5 Star</option>
+                                            </select>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                        <br />
+                                        <div class="form-group text-center">
+                                            <button id="btnSubmitReview" type="button" class="btn btn-primary" value="Submit Review">SUBMIT.REVIEW</button>
+                                        </div>
+                                        <div class="alert alert-success alert-dismissible text-center" role="alert">
+                                            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <strong>Success! </strong>Your review has been submitted successfully.
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>                            
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal" value="Close">CLOSE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- JS Scripts-->
+
+    <!-- build:js js/app.min.js -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-accessibility.min.js"></script>
+    <script src="js/validator.min.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/model.js"></script>
+    <script src="js/controller.js"></script>
+    <script src="js/view.js"></script>
+    <script src="js/init.js"></script>    
+    <!-- /build -->
+</body>
+</html>
