@@ -23,4 +23,4 @@ grunt release
 
 # Demo Page
 
-The full application can be viewed at https://myrestaurantreviewer.apphb.com/
+The full application can be viewed at http://restaurantreviewer.apphb.com/
